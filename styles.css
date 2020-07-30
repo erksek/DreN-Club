@@ -171,35 +171,28 @@
     }
     
     h5 {
-        color: #4400ff;
+        color: #5448ff;
         margin-left: 1rem;
         padding-top: .7rem;
     }
     
-    .b_nav {
+    .nav_soc {
         background-color: #222;
         height: 40px;
         width: 100%;
         position: fixed;
         bottom: 0;
-        padding-top: .5rem;
         overflow: hidden;
-    }
-    
-    .b_nav ul {
-        display: flex;
         justify-content: center;
     }
     
-    .b_nav ul li {
-        padding: 10px;
-        display: inline;
-        font-weight: 500;
-    }
-    
-    .b_nav ul a {
-        text-decoration: none;
-        color: #4400ff;
+    .nav_soc img {
+        padding: 6px;
+        margin-bottom: 1rem;
+        width: auto;
+        display: inline-flex;
+        text-align: center;
+        box-sizing: content-box;
     }
     
     @media only screen and (max-width: 915px) {
@@ -243,7 +236,7 @@
         .t_nav {
             display: block;
         }
-        .b_nav {
+        .nav_soc {
             display: block;
         }
         .p_container {
@@ -299,7 +292,7 @@
             position: absolute;
             top: 20rem;
         }
-        .b_nav {
+        .nav_soc {
             position: absolute;
             bottom: 4rem;
         }
