@@ -12,7 +12,8 @@
         text-shadow: #4400ff 0rem 0rem 7rem;
     }
     
-    #wel {
+    h2 {
+        font-family: "Rowdies", cursive;
         text-align: center;
         text-decoration: underline;
         color: #111;
@@ -73,55 +74,43 @@
         color: #4400ff !important;
     }
     
-    .p_par {
-        text-align: center;
-    }
-    
-    .m_par {
-        text-align: center;
-    }
-    
-    .pp_par {
-        text-align: center;
-    }
-    
     .p_container {
         display: inline-flex;
         width: 100%;
-        margin-bottom: 15rem;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
     }
     
     .pp_container {
         display: inline-flex;
         width: 100%;
-        margin-bottom: 15rem;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
     }
     
     .m_container {
         display: inline-flex;
         width: 100%;
-        margin-bottom: 15rem;
-    }
-    
-    h2 {
-        font-family: "Rowdies", cursive;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
     }
     
     .p_container p {
         margin-right: 100px;
-        text-align: center;
+        text-align: left;
+        margin-top: 1rem;
     }
     
     .pp_container p {
         margin-right: 100px;
-        margin-top: 4rem;
-        text-align: center;
+        margin-top: 1rem;
+        text-align: left;
     }
     
     .m_container p {
         margin-left: 100px;
-        margin-top: 4rem;
-        text-align: center;
+        margin-top: 1rem;
+        text-align: right;
     }
     
     .p_container img {
@@ -129,7 +118,6 @@
         height: 50%;
         margin-right: 3.5rem;
         margin-left: 5.5rem;
-        margin-top: 1.3rem;
     }
     
     .pp_container img {
@@ -151,8 +139,23 @@
         max-width: 800px;
         color: #111;
         font-size: 20px;
-        padding: 25px;
-        min-width: 350px;
+        min-width: 450px;
+    }
+    
+    .p_container h2 {
+        margin-top: 2rem;
+        margin-right: 7rem;
+        margin-bottom: 0;
+    }
+    
+    .m_container h2 {
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+    
+    .pp_container h2 {
+        margin-top: 2rem;
+        margin-right: 7rem;
     }
     
     footer {
@@ -162,12 +165,20 @@
     .footer {
         background-color: #222;
         text-align: center;
-        height: 5rem;
+        height: 3rem;
         padding-right: 1.2rem;
         max-width: 10rem;
         margin-left: 42.5%;
         margin-right: 42.5%;
         border-radius: 15px;
+    }
+    
+    .seper {
+        background-color: #000000;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        border: 1px solid black;
     }
     
     h5 {
@@ -191,8 +202,8 @@
         margin-bottom: 1rem;
         width: auto;
         display: inline-flex;
-        text-align: center;
-        box-sizing: content-box;
+        margin-left: 17%;
+        margin-right: auto;
     }
     
     @media only screen and (max-width: 915px) {
@@ -215,6 +226,16 @@
             margin-left: 0;
             margin-right: 0;
             padding: 0;
+            margin-bottom: 2rem;
+        }
+        .m_container img {
+            width: 100%;
+            display: block;
+            max-height: 16rem;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            margin-top: 2rem;
         }
         .pp_container img {
             width: 100%;
@@ -223,6 +244,7 @@
             margin-left: 0;
             margin-right: 0;
             padding: 0;
+            margin-bottom: 2rem;
         }
         h1 {
             font-size: 16vw;
@@ -238,6 +260,11 @@
         }
         .nav_soc {
             display: block;
+            position: absolute;
+            bottom: 4rem;
+        }
+        .nav_soc img {
+            margin: 0rem 1.5rem;
         }
         .p_container {
             margin-right: 0;
@@ -256,14 +283,43 @@
         }
         .pp_container p {
             margin-right: 0;
+            margin-top: 0;
+            display: block;
+            text-align: center;
+        }
+        .m_container p {
+            margin-left: 0;
+            margin-top: 0;
             display: block;
             text-align: center;
         }
         .p_container h2 {
-            margin-top: 8rem;
+            margin-top: 0;
+            margin-right: 0;
+        }
+        .m_container h2 {
+            margin-top: 0;
+            margin-left: 0;
         }
         .pp_container h2 {
-            margin-top: 8rem;
+            margin-top: 0;
+            margin-right: 0;
+        }
+        .footer {
+            padding-left: 1rem;
+            max-width: 40rem;
+            margin-left: 0;
+            margin-right: 0;
+            border-radius: 0;
+            text-align: center;
+            background-size: cover;
+        }
+        h5 {
+            color: #5448ff;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: .7rem;
+            display: inline;
         }
         h3 {
             margin-left: auto;
@@ -283,7 +339,7 @@
         p {
             display: block;
             text-align: center;
-            min-width: 400px;
+            min-width: 1rem;
             max-height: 600px;
             margin-left: auto;
             margin-right: auto;
@@ -291,10 +347,6 @@
         .t_nav {
             position: absolute;
             top: 20rem;
-        }
-        .nav_soc {
-            position: absolute;
-            bottom: 4rem;
         }
         .footer {
             float: left;
